@@ -391,7 +391,7 @@
           
           for (let j = 2; j < 18; j++) {
             let cellValue = row[j] !== undefined ? row[j] : '';
-	           let cellClass = cellValue.toString().trim() === '' ? 'text-center bg-gray-200' : 'text-center';
+let cellClass = cellValue.toString().trim() === '' ? 'text-center bg-gray-200' : 'text-center';
 
             // Color code percentage cells
             if (secondCell.includes('%') && cellValue !== '') {
@@ -415,7 +415,7 @@
           
           for (let j = 2; j < 18; j++) {
             let cellValue = row[j] !== undefined ? row[j] : '';
-            let cellClass = 'text-center';
+let cellClass = cellValue.toString().trim() === '' ? 'text-center bg-gray-200' : 'text-center';
             
             // Color code score cells
             if (cellValue === 1 || cellValue === '1') cellClass += ' text-green-600 font-semibold';
