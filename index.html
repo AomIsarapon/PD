@@ -391,8 +391,8 @@
           
           for (let j = 2; j < 18; j++) {
             let cellValue = row[j] !== undefined ? row[j] : '';
-            let cellClass = 'text-center';
-            
+	           let cellClass = cellValue.toString().trim() === '' ? 'text-center bg-gray-200' : 'text-center';
+
             // Color code percentage cells
             if (secondCell.includes('%') && cellValue !== '') {
               const numVal = parseFloat(cellValue);
